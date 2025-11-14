@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Matematika</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url("img/bgsoal.jpg") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      padding: 30px;
+       width: 90%;
+      max-width: 500px; /* batas lebar maksimal */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: left;
+      backdrop-filter: blur(6px);
+    }
+
+    img {
+     width: 100%; /* otomatis sesuaikan lebar container */
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #ff7f50;
+      border: none;
+      color: white;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ff5722;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+       <h2>3. Perhatikan gambar berikut ini!</h2>
+<br>
+ <img src="img/soal3.png" alt="Soal 3">
+ <p>Luas daerah yang diarsir adalah … cm² ( π = 3,14) </p>
+    <!-- ganti onclick agar sesuai dengan nama fungsi -->
+    <button onclick="jawab(false)">A. 41</button>
+    <button onclick="jawab(false)">B. 41,3</button>
+    <button onclick="jawab(true)">C. 41,5 </button>
+    <button onclick="jawab(false)">D. 43,0</button>
+  </div>
+
+ 
+ 
+
+  <script>
+    function jawab(benar) {
+      if (benar) {
+        window.location.href = "soal4.html";
+      } else {
+        window.location.href = "salah.html";
+      }
+    }
+  </script>
+</body>
+</html>
