@@ -1,46 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kuis Matematika </title>
+  <title>Kuis Matematika</title>
+
   <style>
     body {
-  font-family: 'Poppins', sans-serif;
-  background: url("https://raw.githubusercontent.com/quizmath/project1/main/bghome.jpg") no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-    .container {
-  background-color: rgba(255, 255, 255, 0.5); /* lebih transparan */
-  border-radius: 20px;
-  padding: 30px;
-  width: 340px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  text-align: center;
-  transition: transform 0.3s;
-  backdrop-filter: blur(6px); /* efek kaca buram supaya teks tetap mudah dibaca */
-}
-
-
-     img {
-      width: 200px;
-      height: 150px;
-      border-radius: 10px;
-      object-fit: cover;
-      margin-bottom: 15px;
+      font-family: 'Poppins', sans-serif;
+      background: url("https://raw.githubusercontent.com/quizmath/project1/main/bghome.jpg") 
+                  no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white; /* supaya teks terlihat */
     }
 
-    h2 {
-      font-size: 20px;
-      color: #fff;
-      margin-bottom: 15px;
+    .container {
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      width: 340px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+      backdrop-filter: blur(6px);
     }
 
     button {
@@ -59,33 +45,16 @@
     button:hover {
       background-color: #ff5722;
     }
-
-    .next-btn {
-      margin-top: 15px;
-      background-color: #4caf50;
-    }
-
-    .next-btn:hover {
-      background-color: #43a047;
-    }
   </style>
 </head>
-</head>
+
 <body>
-  <center>
+  <div class="container">
     <h1>Kuis Math</h1>
     <p>Selamat datang! Mari Belajar Matematika</p>
-    <br>
-    <a href="soal1.html"><button>Mulai Kuis</button></a>
- <br>
-<a href="kunci.html"><button>Kunci</button></a>
 
-  </center>
+    <a href="soal1.html"><button>Mulai Kuis</button></a>
+    <a href="kunci.html"><button>Kunci</button></a>
+  </div>
 </body>
 </html>
-
-
-
-
-
-
