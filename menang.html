@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menang </title>
+  <style>
+    body {
+  font-family: 'Poppins', sans-serif;
+  background: url("img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+    .container {
+  background-color: rgba(255, 255, 255, 0.5); /* lebih transparan */
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  transition: transform 0.3s;
+  backdrop-filter: blur(6px); /* efek kaca buram supaya teks tetap mudah dibaca */
+}
+
+
+      .timer {
+      font-weight: bold;
+      color: #ff5e57;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 200px;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #ff7f50;
+      border: none;
+      color: white;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #ff5722;
+    }
+
+    .next-btn {
+      margin-top: 15px;
+      background-color: #4caf50;
+    }
+
+    .next-btn:hover {
+      background-color: #43a047;
+    }
+  </style>
+</head>
+</head>
+<body>
+  <center>
+    <h1 style="color:green;">SELAMAT ANDA PEMENANG 🎉</h1>
+    
+    <br>
+  <button onclick="ulang()">ULANG</button>
+  <script>
+    function ulang() {
+      window.location.href = "index.html";
+    }
+  </script>
+  </center>
+  </body>
+</html>
